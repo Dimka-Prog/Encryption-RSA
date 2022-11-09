@@ -1,0 +1,11 @@
+C:\ProjectVS\RSA\RSA\bin\Release\RSA.exe.config
+C:\ProjectVS\RSA\RSA\bin\Release\RSA.exe
+C:\ProjectVS\RSA\RSA\bin\Release\RSA.pdb
+C:\ProjectVS\RSA\RSA\obj\Release\RSA.csproj.AssemblyReference.cache
+C:\ProjectVS\RSA\RSA\obj\Release\RSA.csproj.SuggestedBindingRedirects.cache
+C:\ProjectVS\RSA\RSA\obj\Release\RSA.Form1.resources
+C:\ProjectVS\RSA\RSA\obj\Release\RSA.Properties.Resources.resources
+C:\ProjectVS\RSA\RSA\obj\Release\RSA.csproj.GenerateResource.cache
+C:\ProjectVS\RSA\RSA\obj\Release\RSA.csproj.CoreCompileInputs.cache
+C:\ProjectVS\RSA\RSA\obj\Release\RSA.exe
+C:\ProjectVS\RSA\RSA\obj\Release\RSA.pdb
