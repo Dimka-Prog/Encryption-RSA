@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Numerics;
 
 namespace RSA
 {
@@ -31,11 +32,12 @@ namespace RSA
                 long unicode = symbol;
 
                 if (!(unicode < keyGeneration.compositionPQ)) throw new Exception("Ошибка шифрования! Произведение p и q меньше значения входного сообщения.");
-                    unicode = Convert.ToInt64(Math.Pow(unicode, keyGeneration.e) % keyGeneration.compositionPQ);
+                {
+                    unicode = (long)BigInteger.ModPow(unicode, keyGeneration.e, keyGeneration.compositionPQ);
 
-                listUnicode.Add(unicode);
-                encodedMessage += unicode.ToString();
-
+                    listUnicode.Add(unicode);
+                    encodedMessage += unicode.ToString();
+                }
             }
             return encodedMessage;
         }

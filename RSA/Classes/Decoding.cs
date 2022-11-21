@@ -24,22 +24,10 @@ namespace RSA
         private string decodingMessage(List<long> listUnicode)
         {
             string message = "";
-            long symbol;
 
             foreach (var code in listUnicode)
-            {
-                symbol = code;
-                for (long i = 0; i < keyGeneration.d; i++)
-                {
-                    symbol %= keyGeneration.compositionPQ;
-                    if (i != keyGeneration.d - 1)
-                    {
-                        symbol *= code;
-                    }
-                }
-                message += Convert.ToChar((int)symbol); //(BigInteger.Pow(code, (int)keyGeneration.d) % keyGeneration.compositionPQ)
-            }
-            
+                message += Convert.ToChar((long)BigInteger.ModPow(code, (int)keyGeneration.d, keyGeneration.compositionPQ));
+
             return message;
         }
     }
